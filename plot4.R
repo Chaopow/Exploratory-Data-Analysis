@@ -57,7 +57,8 @@ lines(sub_dat$datetime, sub_dat$Sub_metering_2, col = "red")
 lines(sub_dat$datetime, sub_dat$Sub_metering_3, col = "blue")
 legend("topright", col = c("black", "red", "blue"), 
        legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), 
-       lty = c(1,1,1))
+       lty = c(1,1,1),
+       bty = "n")
 
 ## Bottom Right Panel
 plot(trial_sub$datetime, trial_sub$Global_reactive_power, type = "l", 
